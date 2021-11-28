@@ -36,7 +36,7 @@ let amountNumber = Number(amount.value)
 let stepDelay = Number(step.value)
 
 
-    for (let i = 1; i < amountNumber; i += 1) {
+    for (let i = 1; i <= amountNumber; i += 1) {
  
     createPromise(i, delay)
   .then(({ position, delay }) => {
